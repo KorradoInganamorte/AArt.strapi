@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_information_categories",
+  "info": {
+    "displayName": "Category"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "В тренде",
+        "Новые",
+        "Классические"
+      ],
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "anime_of_the_years",
+  "info": {
+    "singularName": "anime-of-the-year",
+    "pluralName": "anime-of-the-years",
+    "displayName": "Anime_of_the_year",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_information_acters",
+  "info": {
+    "displayName": "Acters"
+  },
+  "options": {},
+  "attributes": {
+    "character": {
+      "type": "string",
+      "required": true
+    },
+    "acter": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

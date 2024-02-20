@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_information_ratings",
+  "info": {
+    "displayName": "Rating",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "Кинопоиск",
+        "MyShows.me",
+        "IMDb"
+      ],
+      "required": true
+    },
+    "rating": {
+      "type": "string",
+      "required": true
+    },
+    "of": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

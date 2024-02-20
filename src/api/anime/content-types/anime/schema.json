@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animes",
+  "info": {
+    "singularName": "anime",
+    "pluralName": "animes",
+    "displayName": "Anime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1010
+    },
+    "first_issue": {
+      "type": "string",
+      "required": true
+    },
+    "genre": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "producer": {
+      "type": "string",
+      "required": true
+    },
+    "series": {
+      "type": "string",
+      "required": true
+    },
+    "time_of_series": {
+      "type": "string",
+      "required": true
+    },
+    "time_all": {
+      "type": "string",
+      "required": true
+    },
+    "acters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.acters",
+      "required": true
+    },
+    "rating": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.rating"
+    },
+    "image_webp": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image_jpg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videoURL": {
+      "type": "string",
+      "required": true
+    },
+    "video_trailer": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "description_short": {
+      "type": "text",
+      "required": true,
+      "maxLength": 637
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Новые",
+        "В тренде",
+        "Классические"
+      ],
+      "required": true
+    },
+    "video_series": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.video",
+      "required": true
+    }
+  }
+}
